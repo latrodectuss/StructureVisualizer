@@ -28,31 +28,32 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			button1 = new Button();
-			button2 = new Button();
+			buttonGetFile = new Button();
+			button2D = new Button();
 			textBoxSize = new TextBox();
 			label1 = new Label();
+			button3D = new Button();
 			SuspendLayout();
 			// 
-			// button1
+			// buttonGetFile
 			// 
-			button1.Location = new Point(254, 73);
-			button1.Name = "button1";
-			button1.Size = new Size(266, 138);
-			button1.TabIndex = 0;
-			button1.Text = "Тык для выбора файла структуры";
-			button1.UseVisualStyleBackColor = true;
-			button1.Click += button1_Click;
+			buttonGetFile.Location = new Point(254, 73);
+			buttonGetFile.Name = "buttonGetFile";
+			buttonGetFile.Size = new Size(266, 138);
+			buttonGetFile.TabIndex = 0;
+			buttonGetFile.Text = "Тык для выбора файла структуры";
+			buttonGetFile.UseVisualStyleBackColor = true;
+			buttonGetFile.Click += buttonGetFile_Click;
 			// 
-			// button2
+			// button2D
 			// 
-			button2.Location = new Point(254, 281);
-			button2.Name = "button2";
-			button2.Size = new Size(266, 45);
-			button2.TabIndex = 1;
-			button2.Text = "Тык для визуализации";
-			button2.UseVisualStyleBackColor = true;
-			button2.Click += button2_Click;
+			button2D.Location = new Point(254, 244);
+			button2D.Name = "button2D";
+			button2D.Size = new Size(266, 45);
+			button2D.TabIndex = 1;
+			button2D.Text = "Тык для визуализации";
+			button2D.UseVisualStyleBackColor = true;
+			button2D.Click += button2D_Click;
 			// 
 			// textBoxSize
 			// 
@@ -70,15 +71,26 @@
 			label1.TabIndex = 3;
 			label1.Text = "Масштаб";
 			// 
+			// button3D
+			// 
+			button3D.Location = new Point(254, 313);
+			button3D.Name = "button3D";
+			button3D.Size = new Size(266, 45);
+			button3D.TabIndex = 4;
+			button3D.Text = "Тык для визуализации в 3D";
+			button3D.UseVisualStyleBackColor = true;
+			button3D.Click += button3D_Click;
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(800, 450);
+			Controls.Add(button3D);
 			Controls.Add(label1);
 			Controls.Add(textBoxSize);
-			Controls.Add(button2);
-			Controls.Add(button1);
+			Controls.Add(button2D);
+			Controls.Add(buttonGetFile);
 			Name = "Form1";
 			Text = "Form1";
 			Load += Form1_Load;
@@ -88,9 +100,10 @@
 
 		#endregion
 
-		private Button button1;
-		private Button button2;
+		private Button buttonGetFile;
+		private Button button2D;
 		private TextBox textBoxSize;
 		private Label label1;
+		private Button button3D;
 	}
 }
